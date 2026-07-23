@@ -1,6 +1,6 @@
-/* Write your PL/SQL query statement below */
-SELECT *
-FROM Cinema
-WHERE MOD(id, 2) = 1
-  AND LOWER(description) <> 'boring'
-ORDER BY rating DESC;
+# Write your MySQL query statement below
+SELECT * 
+FROM CINEMA 
+WHERE ID % 2 = 1
+AND DESCRIPTION != 'BORING'
+ORDER BY RATING DESC;
